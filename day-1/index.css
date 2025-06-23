@@ -1,0 +1,145 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(21, 21, 59);
+  color: hsl(0, 0%, 85%);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 85%);
+  user-select: none;
+}
+
+/* Grid container for cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+
+.card {
+  background-color: hsl(222, 30%, 15%);
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  min-height: 480px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* Image section */
+.card-img {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.05);
+}
+
+/* Info section */
+.card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+  color: hsl(0, 0%, 85%);
+}
+
+/* Name & role */
+.card-details h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.card-details h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+  margin-bottom: 10px;
+}
+
+.card-info span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: hsl(0, 0%, 80%);
+  line-height: 1.4;
+}
+
+
+.social-medias {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.social-medias a {
+  color: hsl(0, 0%, 85%);
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+.social-medias a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 776px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
