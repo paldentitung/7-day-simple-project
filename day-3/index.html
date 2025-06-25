@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Simple Calculator</div>
+      <div class="Calculator-container">
+        <div class="input-container">
+          <input type="text" id="user-input" />
+        </div>
+        <div class="sub-calculator-container">
+            <div class="Calculator-row">
+                <button class="operator" onclick="operator('AC')">AC</button>
+                <button class="operator" onclick="operator()">()</button>
+                <button class="operator" onclick="operator('%')">%</button>
+                <button class="operator" onclick="operator('/')">/</button>
+            </div>
+               <div class="Calculator-row">
+                <button class="digit" onclick="digit('7')">7</button>
+                <button class="digit" onclick="digit('8')">8</button>
+                <button class="digit" onclick="digit('9')">9</button>
+                <button class="operator" onclick="operator('*')" >*</button>
+            </div>
+               <div class="Calculator-row">
+                <button class="digit" onclick="digit('4')">4</button>
+                <button class="digit" onclick="digit('5')">5</button>
+                <button class="digit" onclick="digit('6')">6</button>
+                <button class="operator" onclick="operator('-')">-</button>
+            </div>
+               <div class="Calculator-row">
+                <button class="digit" onclick="digit('1')">1</button>
+                <button class="digit" onclick="digit('2')">2</button>
+                <button class="digit" onclick="digit('3')">3</button>
+                <button class="operator" onclick="operator('+')">+</button>
+            </div>
+               <div class="Calculator-row">
+                <button class="digit" onclick="digit('0')">0</button>
+                <button class="digit" onclick="digit('.')">.</button>
+                <button class="operator" onclick="operator('c')">c</button>
+                <button class="IsEqual" >=</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script  defer src="index.js"></script>
+  </body>
+</html>

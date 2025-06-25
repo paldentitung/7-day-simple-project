@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background: hwb(0 0% 97%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  background: #000;
+  gap: 10px;
+}
+.title {
+  font-size: 1.5rem;
+}
+.Calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.sub-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #131111;
+  padding: 8px;
+}
+.Calculator-row {
+  display: flex;
+  gap: 15px;
+}
+.sub-calculator-container button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #272525;
+
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+.Calculator-row .IsEqual {
+  background-color: rgb(238, 236, 236);
+  color: black;
+}
+.Calculator-row .operator {
+  background-color: rgb(238, 236, 236);
+  color: black;
+}
+.input-container {
+  width: 100%;
+}
+.input-container input {
+  width: 100%;
+  height: 60px;
+  background: #3a3a3a;
+  outline: none;
+  color: hsl(0, 0%, 90%);
+  border: none;
+  border-radius: 15px;
+  padding: 5px ;
+  font-size: 1rem;
+}
