@@ -1,15 +1,13 @@
 function digit(num) {
   let userinput = document.getElementById("user-input");
 
-
   if (num === ".") {
-
     if (userinput.value.includes(".")) {
-      return; 
+      return;
     }
   }
 
-  userinput.value += num; 
+  userinput.value += num;
 }
 
 function operator(ope) {
@@ -34,13 +32,12 @@ function operator(ope) {
     userinput.value += "+";
     return;
   }
-  if(ope === '%'){
-    userinput.value+='%'
+  if (ope === "%") {
+    userinput.value += "%";
   }
-if (ope === 'c') {
-  userinput.value = userinput.value.slice(0, -1); 
-}
-
+  if (ope === "c") {
+    userinput.value = userinput.value.slice(0, -1);
+  }
 }
 
 let equalBtn = document.querySelector(".IsEqual");
