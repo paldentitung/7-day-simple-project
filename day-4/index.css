@@ -8,12 +8,12 @@ body {
   background: rgb(3, 3, 49);
   color: white;
 }
-.title{
-    display: flex;
-    justify-content: center;
-align-items: center;
-font-size: 2rem;
-font-weight: 600;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .container {
   padding: 5%;
@@ -22,17 +22,16 @@ font-weight: 600;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.img-container{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
 }
 .img-container img {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
   transition: all 0.3s;
 }
 .gallery-grid img:hover {
@@ -40,9 +39,10 @@ font-weight: 600;
   cursor: pointer;
 }
 .modal {
-display: none;
+  display: none;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
@@ -66,21 +66,21 @@ display: none;
   font-size: 40px;
   cursor: pointer;
   z-index: 1001;
-} 
-#downloadImg{
-position: absolute;
-top: 10px;
-left: 20px;
-font-size: 1rem;
-padding: 10px 20px ;
-border:1px solid white;
-border-radius: 5px;
- background: #000;
- color:white;
- transition: all 0.3s;
 }
-#downloadImg:hover{
-    background: white;
-    color: black;
-    cursor: pointer;
+#downloadImg {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #000;
+  color: white;
+  transition: all 0.3s;
+}
+#downloadImg:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
 }

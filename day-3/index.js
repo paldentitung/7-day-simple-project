@@ -1,12 +1,10 @@
 function digit(num) {
   let userinput = document.getElementById("user-input");
-
   if (num === ".") {
     if (userinput.value.includes(".")) {
       return;
     }
   }
-
   userinput.value += num;
 }
 
